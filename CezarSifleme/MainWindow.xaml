@@ -1,0 +1,22 @@
+﻿<Window x:Class="CezarSifleme.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Label x:Name="lbl1" Content="şifrelenecek metin" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lbl2" Content="anahtar" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,28,0,0"/>
+        <TextBox x:Name="txtSifrelenecek" HorizontalAlignment="Left" Height="23" Margin="181,2,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAnahtar" HorizontalAlignment="Left" Height="23" Margin="181,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <RichTextBox x:Name="rtbSifreliMetin" HorizontalAlignment="Left" Height="100" Margin="181,136,0,0" VerticalAlignment="Top" Width="246" RenderTransformOrigin="0.047,-0.254" IsEnabled="False">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="btn" Content="Şifrele" HorizontalAlignment="Left" Margin="181,72,0,0" VerticalAlignment="Top" Width="120" Height="59" Click="btn_Click"/>
+        <Label x:Name="lblSonuc" Content="Label" HorizontalAlignment="Left" Margin="181,261,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.051,0.652" Width="246"/>
+        <Button x:Name="btn2" Content="Playfair" HorizontalAlignment="Left" Margin="306,72,0,0" VerticalAlignment="Top" Width="121" RenderTransformOrigin="-0.003,-0.586" Height="59" Click="btn2_Click"/>
+
+    </Grid>
+</Window>
